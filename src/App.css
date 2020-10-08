@@ -1,38 +1,94 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.habit {
+  font-size: 2.5rem;
+  padding: 0.5em;
+  list-style: none;
+}
+
+.habit-count {
+  display: inline-block;
   text-align: center;
+  font-size: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
+  background-color: darkseagreen;
+  color: white;
+  border-radius: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.habit-button {
+  font-size: 2.5rem;
+  margin: 0 0.1em;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.habit-button:hober {
+  opacity: 0.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.habit-increase,
+.habit-decrease {
+  color: goldenrod;
+}
+
+.habit-delete {
+  font-size: 2rem;
+  color: red;
+}
+
+header {
+  width: 500px;
+  height: 100px;
+  background-color: bisque;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem;
+}
+.logo {
+  color: green;
+}
+.header__title {
+  padding: 0 15px;
+}
+.header__count {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  background-color: green;
+  border-radius: 50%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.add-form {
+  margin-top: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add__input {
+  font-size: 2rem;
+}
+.add__btn {
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 0.3em 0.5em;
+  background-color: green;
+  color: white;
+}
+.reset__btn {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: green;
+  color: white;
 }
